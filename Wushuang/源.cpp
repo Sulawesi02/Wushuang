@@ -9,30 +9,22 @@ using namespace std;
 
 const int WINDOW_WIDTH = 1280;
 const int WINDOW_HEIGHT = 720;
-const int BUTTON_WIDTH = 192;
-const int BUTTON_HEIGHT = 75; 
-
 
 #pragma comment(lib,"Winmm.lib")
 #pragma comment(lib,"MSIMG32.LIB")
 // 透明度混合
-static void putimage_alpha(int x, int y, IMAGE* img) {
+inline void putimage_alpha(int x, int y, IMAGE* img) {
     int w = img->getwidth();
     int h = img->getheight();
     AlphaBlend(GetImageHDC(NULL), x, y, w, h,
         GetImageHDC(img), 0, 0, w, h, { AC_SRC_OVER,0,255, AC_SRC_ALPHA });
 }
+// 图集
+class Atlas {
 
-// 动画
-class Animation {
-    int timer = 0;// 计时器
-    int idx_frame = 0;//帧索引
-    int interval_ms = 0;//帧间隔
-    vector<IMAGE*>frame_list;
 public:
-    Animation(LPCTSTR path, int num, int interval) {
-        interval_ms = interval;
-
+    vector<IMAGE*>frame_list;
+    Atlas(LPCTSTR path, int num) {
         TCHAR path_file[256];
         for (size_t i = 0; i < num; i++) {
             _stprintf_s(path_file, path, i);
@@ -41,18 +33,40 @@ public:
             frame_list.push_back(frame);
         }
     }
-    ~Animation() {
+
+    ~Atlas() {
         for (size_t i = 0; i < frame_list.size(); i++) {
-            delete frame_list[i]; 
+            delete frame_list[i];
         }
     }
+};
+Atlas* atlas_player_left;// 玩家向左动作帧序列
+Atlas* atlas_player_right;// 玩家向右动作帧序列
+Atlas* atlas_enemy_left;// 敌人向左动作帧序列
+Atlas* atlas_enemy_right; // 敌人向右动作帧序列
+
+// 动画
+class Animation {
+    int timer = 0;// 计时器
+    int idx_frame = 0;//帧索引
+    int interval_ms = 0;//帧间隔
+    Atlas* anim_atlas;
+
+public:
+    Animation(Atlas* atlas, int interval) {
+        anim_atlas = atlas;
+        interval_ms = interval;
+
+    }
+    ~Animation() = default;
+
     void Play(int x, int y, int delta){
         timer += delta;
         if (timer >= interval_ms){
-            idx_frame = (idx_frame + 1) % frame_list.size();
+            idx_frame = (idx_frame + 1) % anim_atlas->frame_list.size();
             timer = 0;
         }
-        putimage_alpha(x, y, frame_list[idx_frame]);
+        putimage_alpha(x, y, anim_atlas->frame_list[idx_frame]);
 
     }
 };
@@ -79,9 +93,8 @@ public:
 class Player{
 
     IMAGE img_shadow;// 阴影图像
-    Animation* player_anim_left;// 向左动作帧序列
-    Animation* player_anim_right;// 向右动作帧序列
-
+    Animation* anim_player_left;
+    Animation* anim_player_right;
     bool is_move_up = false;
     bool is_move_down = false;
     bool is_move_left = false;
@@ -96,14 +109,11 @@ public:
 
     Player(){
         loadimage(&img_shadow, _T("img/shadow_player.png"));
-        player_anim_left = new Animation(_T("img/paimon_left_%d.png"), 6, 45);// 动画由6张图片构成，帧间隔45ms
-        player_anim_right = new Animation(_T("img/paimon_right_%d.png"), 6, 45);
+        anim_player_left = new Animation(atlas_player_left, 45);// 动画帧间隔45ms
+        anim_player_right = new Animation(atlas_player_right, 45);
     }
 
-    ~Player(){
-        delete player_anim_left;
-        delete player_anim_right;
-    }
+    ~Player() = default;
 
     void ProcessEvent(const ExMessage& msg){
         if (msg.message == WM_KEYDOWN) {
@@ -170,9 +180,9 @@ public:
         else if (dir_x > 0)
             facing_left = false;
         if (facing_left)
-            player_anim_left->Play(player_pos.x, player_pos.y, delta);
+            anim_player_left->Play(player_pos.x, player_pos.y, delta);
         else
-            player_anim_right->Play(player_pos.x, player_pos.y, delta);
+            anim_player_right->Play(player_pos.x, player_pos.y, delta);
     }
 
     const POINT& GetPosition() const{
@@ -185,8 +195,9 @@ public:
 class Enemy{
 
     IMAGE img_shadow;// 阴影图像
-    Animation* enemy_anim_left;// 向左动作帧序列
-    Animation* enemy_anim_right; // 向右动作帧序列
+    Animation* anim_enemy_left;
+    Animation* anim_enemy_right;
+
     bool facing_left = false;// 朝左运动标志位
     bool mIsAlive = true; 
 
@@ -199,8 +210,8 @@ public:
 
     Enemy(){
         loadimage(&img_shadow, _T("img/shadow_enemy.png"));
-        enemy_anim_left = new Animation(_T("img/boar_left_%d.png"), 6, 45);
-        enemy_anim_right = new Animation(_T("img/boar_right_%d.png"), 6, 45);
+        anim_enemy_left = new Animation(atlas_enemy_left, 45);
+        anim_enemy_right = new Animation(atlas_enemy_right, 45);
 
         // 敌人生成边界
         enum class SpawnEdge{
@@ -234,10 +245,7 @@ public:
         }
     }
 
-    ~Enemy(){
-        delete enemy_anim_left;
-        delete enemy_anim_right;
-    }
+    ~Enemy() = default;
 
     void Hurt(){
         mIsAlive = false;// 一击必杀
@@ -288,9 +296,9 @@ public:
         putimage_alpha(pos_shadow_x, pos_shadow_y, &img_shadow);
 
         if (facing_left)
-            enemy_anim_left->Play(enemy_pos.x, enemy_pos.y, delta);
+            anim_enemy_left->Play(enemy_pos.x, enemy_pos.y, delta);
         else
-            enemy_anim_right->Play(enemy_pos.x, enemy_pos.y, delta);
+            anim_enemy_right->Play(enemy_pos.x, enemy_pos.y, delta);
     }
 
     const POINT& GetPosition() const{
@@ -332,8 +340,13 @@ int main()
 {
     initgraph(1280, 720);// 创建绘图窗口
 
-    mciSendString(_T("open mus/bgm.mp3 alias bgm"), NULL, 0, NULL);
-    mciSendString(_T("open mus/hit.wav alias hit"), NULL, 0, NULL);
+    atlas_player_left = new Atlas(_T("img/paimon_left_%d.png"), 6); // 动画由6张图片构成，
+    atlas_player_right = new Atlas(_T("img/paimon_right_%d.png"), 6);
+    atlas_enemy_left = new Atlas(_T("img/boar_left_%d.png"), 6);
+    atlas_enemy_right = new Atlas(_T("img/boar_right_%d.png"), 6);
+
+    mciSendString(_T("open mus/bgm.mp3 alias bgm"), NULL, 0, NULL);// 背景音乐
+    mciSendString(_T("open mus/hit.wav alias hit"), NULL, 0, NULL);///攻击音乐
 
     mciSendString(_T("play bgm repeat from 0"), NULL, 0, NULL);
 
@@ -414,6 +427,12 @@ int main()
         if (detle_time < 1000 / 144)
             Sleep(1000 / 144 - detle_time);
     }
+
+    delete atlas_player_left;
+    delete atlas_player_right;
+    delete atlas_enemy_left;
+    delete atlas_enemy_right;
+
     EndBatchDraw();// 结束批量绘制并执行未完成的绘制任务
     return 0;
 }
