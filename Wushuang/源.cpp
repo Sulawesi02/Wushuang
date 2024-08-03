@@ -13,6 +13,7 @@ const int BUTTON_WIDTH = 192;
 const int BUTTON_HEIGHT = 75; 
 
 
+#pragma comment(lib,"Winmm.lib")
 #pragma comment(lib,"MSIMG32.LIB")
 // 透明度混合
 static void putimage_alpha(int x, int y, IMAGE* img) {
@@ -297,9 +298,8 @@ public:
     }
 
 };
-
 // 生成新的敌人
-void TryGenerateEnemy(vector<Enemy*>& enemy_list){
+void TryGenerateEnemy(vector<Enemy*>& enemy_list) {
     const int INTERVAL = 100;
     static int counter = 0;
     if ((++counter) % INTERVAL == 0)
@@ -312,17 +312,33 @@ void UpdateBullets(vector<Bullet>& bullet_list, const Player& player) {
     const double TANGENT_SPEED = 0.0055;// 切向波动速度
     double radianInterval = 2 * 3.14159 / bullet_list.size();// 子弹之间的弧度间隔
     double radius = 100 + 25 * sin(GetTickCount() * RADIAL_SPEED);
-    for (int i = 0; i < bullet_list.size(); i++){
+    for (int i = 0; i < bullet_list.size(); i++) {
         double radian = GetTickCount() * TANGENT_SPEED + radianInterval * i;
         bullet_list[i].bullet_pos.x = player.GetPosition().x + player.PLAYER_WIDTH / 2 + (int)(radius * sin(radian));
         bullet_list[i].bullet_pos.y = player.GetPosition().y + player.PLAYER_WIDTH / 2 + (int)(radius * cos(radian));
     }
-} 
+}
+// 绘制玩家得分
+void DrawPlayScore(int score) {
+    static TCHAR text[64];
+    _stprintf_s(text, _T("当前玩家得分：%d"), score);
+
+    setbkmode(TRANSPARENT);
+    settextcolor(RGB(255, 85, 185));
+    outtextxy(10, 10, text);
+}
+
 int main()
 {
     initgraph(1280, 720);// 创建绘图窗口
 
+    mciSendString(_T("open mus/bgm.mp3 alias bgm"), NULL, 0, NULL);
+    mciSendString(_T("open mus/hit.wav alias hit"), NULL, 0, NULL);
+
+    mciSendString(_T("play bgm repeat from 0"), NULL, 0, NULL);
+
     bool running = true;
+    int score = 0;// 得分
 
     ExMessage msg;// 消息结构体
     IMAGE img_background;// 背景图片
@@ -350,29 +366,34 @@ int main()
         for (Enemy* enemy : enemy_list)
             enemy->Move(player);
 
-
+        // 检测碰撞
         for (Enemy* enemy : enemy_list) {
             // 检测敌人与玩家的碰撞
             if (enemy->CheckPlayerCollision(player)) {
-                MessageBox(GetHWnd(), _T("死"), _T("游戏结束"), MB_OK);
+                static TCHAR text[128];
+                _stprintf_s(text, _T("最终得分：%d！"), score);
+                //MessageBox(GetHWnd(), _T("死"), _T("游戏结束"), MB_OK);
+                MessageBox(GetHWnd(), text, _T("游戏结束"), MB_OK);
                 running = false;
                 break;
             }
             // 检测敌人与子弹的碰撞
             for (const Bullet& bullet : bullet_list){
                 if (enemy->CheckBulletCollision(bullet)){
+                    mciSendString(_T("play hit from 0"), NULL, 0, NULL);
                     enemy->Hurt();
+                    score++;
                 }
             }             
         }
 
         // 移除生命值为0的敌人
         for (int i = 0; i < enemy_list.size(); i++){
-            Enemy* eny = enemy_list[i];
-            if (!eny->CheckAlive()){
+            Enemy* enemy = enemy_list[i];
+            if (!enemy->CheckAlive()){
                 swap(enemy_list[i], enemy_list.back());
                 enemy_list.pop_back();
-                delete eny;
+                delete enemy;
             }
         } 
 
@@ -384,6 +405,7 @@ int main()
             enemy->Draw(1000 / 144);
         for (const Bullet& bullet : bullet_list)
             bullet.Draw(); 
+        DrawPlayScore(score);
 
         FlushBatchDraw();// 执行未完成的绘制任务
 
