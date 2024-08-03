@@ -12,8 +12,8 @@ class Bullet {
 public:
     POINT bullet_pos = { 0,0 };
 
-    Bullet();
-    ~Bullet();
+    Bullet() = default;
+    ~Bullet() = default;
 
     void Draw()const;
 

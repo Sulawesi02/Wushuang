@@ -3,40 +3,44 @@
   "WorkspaceRootPath": "D:\\Mycode\\VS_Code\\Wushuang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Button.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Button.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Atlas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Atlas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\atlas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -45,6 +49,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C972D0B1-3C4C-444E-95A0-D5E7C07C4E31}|Wushuang\\Wushuang.vcxproj|solutionrelative:Wushuang\\Animation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,76 +62,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.h",
-              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.h",
-              "RelativeDocumentMoniker": "Wushuang\\Player.h",
-              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.h",
-              "RelativeToolTip": "Wushuang\\Player.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T06:31:49.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Enemy.h",
-              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.h",
-              "RelativeDocumentMoniker": "Wushuang\\Enemy.h",
-              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.h",
-              "RelativeToolTip": "Wushuang\\Enemy.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T06:32:01.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bullet.h",
-              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Bullet.h",
-              "RelativeDocumentMoniker": "Wushuang\\Bullet.h",
-              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Bullet.h",
-              "RelativeToolTip": "Wushuang\\Bullet.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T06:36:11.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.cpp",
-              "RelativeDocumentMoniker": "Wushuang\\Player.cpp",
-              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.cpp",
-              "RelativeToolTip": "Wushuang\\Player.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T06:54:31.299Z",
+              "Title": "Button.h",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Button.h",
+              "RelativeDocumentMoniker": "Wushuang\\Button.h",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Button.h",
+              "RelativeToolTip": "Wushuang\\Button.h",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T08:55:48.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\main.cpp",
-              "RelativeDocumentMoniker": "Wushuang\\main.cpp",
-              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\main.cpp",
-              "RelativeToolTip": "Wushuang\\main.cpp",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADkAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-01T02:23:06.868Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Atlas.h",
               "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Atlas.h",
               "RelativeDocumentMoniker": "Wushuang\\Atlas.h",
@@ -136,46 +92,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Button.cpp",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Button.cpp",
+              "RelativeDocumentMoniker": "Wushuang\\Button.cpp",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Button.cpp",
+              "RelativeToolTip": "Wushuang\\Button.cpp",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T08:55:38.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\main.cpp",
+              "RelativeDocumentMoniker": "Wushuang\\main.cpp",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\main.cpp",
+              "RelativeToolTip": "Wushuang\\main.cpp",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAYwF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-01T02:23:06.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bullet.h",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Bullet.h",
+              "RelativeDocumentMoniker": "Wushuang\\Bullet.h",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Bullet.h",
+              "RelativeToolTip": "Wushuang\\Bullet.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T06:36:11.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.h",
+              "RelativeDocumentMoniker": "Wushuang\\Enemy.h",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.h",
+              "RelativeToolTip": "Wushuang\\Enemy.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T06:32:01.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Animation.h",
               "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Animation.h",
               "RelativeDocumentMoniker": "Wushuang\\Animation.h",
               "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Animation.h",
               "RelativeToolTip": "Wushuang\\Animation.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-03T06:31:39.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Enemy.cpp",
-              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.cpp",
-              "RelativeDocumentMoniker": "Wushuang\\Enemy.cpp",
-              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.cpp",
-              "RelativeToolTip": "Wushuang\\Enemy.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T06:54:41.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Bullet.cpp",
               "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Bullet.cpp",
               "RelativeDocumentMoniker": "Wushuang\\Bullet.cpp",
               "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Bullet.cpp",
               "RelativeToolTip": "Wushuang\\Bullet.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-03T06:54:49.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Enemy.cpp",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.cpp",
+              "RelativeDocumentMoniker": "Wushuang\\Enemy.cpp",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Enemy.cpp",
+              "RelativeToolTip": "Wushuang\\Enemy.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T06:54:41.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.cpp",
+              "RelativeDocumentMoniker": "Wushuang\\Player.cpp",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.cpp",
+              "RelativeToolTip": "Wushuang\\Player.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T06:54:31.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Player.h",
+              "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.h",
+              "RelativeDocumentMoniker": "Wushuang\\Player.h",
+              "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Player.h",
+              "RelativeToolTip": "Wushuang\\Player.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwB8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T06:31:49.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Atlas.cpp",
               "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Atlas.cpp",
               "RelativeDocumentMoniker": "Wushuang\\Atlas.cpp",
@@ -188,13 +222,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Animation.cpp",
               "DocumentMoniker": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Animation.cpp",
               "RelativeDocumentMoniker": "Wushuang\\Animation.cpp",
               "ToolTip": "D:\\Mycode\\VS_Code\\Wushuang\\Wushuang\\Animation.cpp",
               "RelativeToolTip": "Wushuang\\Animation.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-03T06:42:20.647Z",
               "EditorCaption": ""

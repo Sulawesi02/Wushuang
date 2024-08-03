@@ -18,8 +18,6 @@ Player::Player() {
     anim_player_right = new Animation(atlas_player_right, 45);
 }
 
-Player::~Player() = default;
-
 void Player::ProcessEvent(const ExMessage& msg) {
     if (msg.message == WM_KEYDOWN) {
         switch (msg.vkcode) {

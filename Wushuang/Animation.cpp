@@ -14,7 +14,6 @@ Animation::Animation(Atlas* atlas, int interval) {
     anim_atlas = atlas;
     interval_ms = interval;
 }
-Animation::~Animation() = default;
 
 void Animation::Play(int x, int y, int delta) {
     timer += delta;

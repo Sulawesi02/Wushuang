@@ -29,7 +29,7 @@ public:
     const int SHADOW_WIDTH = 32;// “ı”∞øÌ∂»
 
     Player();
-    ~Player();
+    ~Player() = default;
 
     void ProcessEvent(const ExMessage& msg);
     void Move();

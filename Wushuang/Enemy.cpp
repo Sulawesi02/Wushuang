@@ -49,8 +49,6 @@ Enemy::Enemy() {
     }
 }
 
-Enemy::~Enemy() = default;
-
 void Enemy::Hurt() {
     mIsAlive = false;// Ò»»÷±ØÉ±
 }

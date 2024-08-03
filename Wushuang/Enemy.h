@@ -28,7 +28,7 @@ class Enemy {
 public:
 
     Enemy();
-    ~Enemy();
+    ~Enemy() = default;
 
     void Hurt();
     bool CheckAlive();

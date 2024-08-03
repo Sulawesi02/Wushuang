@@ -15,7 +15,7 @@ class Animation {
 
 public:
     Animation(Atlas* atlas, int interval);
-    ~Animation();
+    ~Animation() = default;
 
     void Play(int x, int y, int delta);
 };
